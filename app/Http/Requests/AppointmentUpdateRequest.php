@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\Rules\PostcodeCountry;
+use App\Rules\PostCodeCountry;
 use Illuminate\Foundation\Http\FormRequest;
 
 class AppointmentUpdateRequest extends FormRequest
