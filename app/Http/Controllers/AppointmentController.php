@@ -116,7 +116,7 @@ class AppointmentController extends Controller
     }
 
     /**
-     * @note Sadece randevu bilgileri silindi, müşteri bilgileri bilerek silinmedi nedeni ise müşteri ile başka randevularıda olabilir.
+     * @note Customer data not deleted because customer have more the one appointment.
      * @param int $id
      * @return mixed
      */
