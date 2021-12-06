@@ -15,7 +15,7 @@ use \App\Http\Controllers\AppointmentController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::group(['middleware' => 'api'], function () {
+Route::group(['middleware' => ['api','throttle:60']], function () {
     Route::group(['prefix' => 'auth'], function () {
         Route::post('/login', [AuthController::class, 'login']);
         Route::post('/register', [AuthController::class, 'register']);
